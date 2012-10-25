@@ -1,6 +1,6 @@
 #include <iostream>
 
-template <int x>
+template <unsigned int x>
 struct factorial {
 	static const int value = x * factorial<x - 1>::value;
 };
